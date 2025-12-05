@@ -9,7 +9,6 @@ object GenVerilog extends App {
   // println(verilogString)
 
   // Export files
-  // Hàm emitVerilog thay thế cho ChiselStage.emitSystemVerilogFile cũ
   emitVerilog(
     new RunInside.multiplexer(), 
     Array("--target-dir", "generated") // Output directory
