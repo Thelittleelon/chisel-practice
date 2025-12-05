@@ -6,12 +6,13 @@ ThisBuild / organization     := "com.github.thelittleelon"
 
 val chiselVersion = "7.0.0"
 
+
 lazy val root = (project in file("."))
   .settings(
     name := "chisel-practice",
     libraryDependencies ++= Seq(
       "org.chipsalliance" %% "chisel" % chiselVersion,
-      "org.scalatest" %% "scalatest" % "3.2.19" % "test",
+      "org.scalatest" %% "scalatest" % "3.2.19" % "test"
     ),
     scalacOptions ++= Seq(
       "-language:reflectiveCalls",
